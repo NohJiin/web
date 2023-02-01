@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. 가로 22.1, 세로 33.1 실수로 입력받으세요.
+        // 사각형 면적을 구해서 출력(가로*세로)
+        // 2. 커피한잔 가격 , 커피구매 갯수를 입력받으세요.
+        // 전체 결제금액을 구해서 출력
+        // 3. 사과의 가격이 2000, 배의 가격이 3000
+        // 사과 구매 개수 3, 배 구매 개수 2
+        // 전체 결제 금액은?
+        // 4. 어제 온도 25도, 오늘 온도 10도
+        // 어제와 오늘 온도의 평균은?
+
+        //1
+        x = prompt("가로 길이 : ")
+        y = prompt("세로 길이 : ")
+        result1 = parseFloat(x) * parseFloat(y)
+        alert("가로 * 세로의 면적은 " + result1.toFixed(1) + "입니다.")
+        // result1.toFixed(1) - 소수점 1자리까지만 표시
+        
+        //2
+        price = prompt("커피 한 잔 가격 : ")
+        num = prompt("구매 개수 : ")
+        result2 = parseInt(price) * parseInt(num)
+        alert("전체 결제금액 : " + result2 + "원")
+
+        //3
+        const PRICE1 = 2000
+        const PRICE2 = 3000
+        result3 = PRICE1*3 + PRICE2*2
+        alert("사과와 배의 전체 결제 금액 : " + result3)
+        // const A : 변경 불가능한 값을 넣을 때, 상수
+        // const로 설정하고 변수 변경을 하면 오류가 발생한다(consol(F12)에서 확인가능)
+
+        //4
+        yesterday = 25
+        today = 10
+        //result4 = parseFloat((yesterday + today)/2)
+        alert("어제와 오늘의 평균온도 : " + (today + yesterday)/2)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

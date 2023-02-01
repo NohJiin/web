@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // height변수(저장공간)에 187.7을 넣으세요
+        // weight변수에 55를 넣으세요
+        // result변수에 키에서 몸무게를 뺀 결과를 넣으세요
+        // result변수에 저장된 값을 다음과 같이 출력
+        // 키에서 몸무게를 뺀 값은 132.7입니다.
+
+        // 1
+        height = 187.7
+        weight = 55
+        result = (height - weight)
+        alert("키에서 몸무게를 뺀 값은 " + result + "입니다.")
+        // 2
+        height = prompt("당신의 키는 얼마입니까?")      //문자로 인식
+        weight = prompt("당신의 몸무게는 얼마입니까?")  //문자로 인식
+        result = height - weight        // 자동으로 숫자로 바꿔줌(-는 가능하지만 +는 문자끼리 연결하는 역할을 해서 사용 X)
+        alert("키에서 몸무게를 뺀 값은 " + result + "입니다.")
+        // 3 - 문자를 숫자로 바꾸기 => 부품이 필요하다
+        height = prompt("당신의 키는 얼마입니까?")      //문자로 인식
+        weight = prompt("당신의 몸무게는 얼마입니까?")  //문자로 인식
+        result1 = parseInt(height) + parseInt(weight)      //정수로 변경
+        //result2 = parseFloat(height) + parseFloat(weight)   //실수로 변경
+        alert("키에서 몸무게를 뺀 값은 " + result1 + "입니다.")
+        //alert("키에서 몸무게를 뺀 값은 " + result2 + "입니다.")
+
+        // 1.1 + 2.2 = 3.000003 ...? -> 실수 연산이 정확하지 않은 이유,,는 무ㅝ라구요...?
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
