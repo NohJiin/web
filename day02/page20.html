@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out2.css">
+    <!-- <style>
+        li{
+            list-style: none;
+            float: left;
+            /* padding : 간격 */
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            /* border-radius: 50px; */
+            text-align: center;
+        }
+        a:hover{    /* 마우스가 올렸을 때 효과 */
+            background: skyblue;
+        }
+        li:first-child{
+            border-radius: 50px 0 0 50px;
+        }
+        li:last-child{
+            border-radius: 0 50px 50px 0;
+        }
+        li:nth-child(2n){
+            background: pink;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background: lightcyan;
+        }
+        body{
+            background: pink;
+        }
+        div{
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+        #top{
+            width: 800px;
+            height: 100px;
+            background: skyblue;
+            padding: 2px;
+        }
+        #top2{
+            width: 250px;
+            height: 100px;
+            background: coral;
+            border-radius: 100px 10px;
+            padding: 2px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border: 10px dotted white;
+            box-shadow: 10px 10px black;
+        }
+        #center{
+            width: 800px;
+            height: 800px;
+            background: beige;
+            padding: 30px;
+        }
+        table{
+            font-family: 굴림;
+        }
+    </style> -->
+</head>
+<body>
+    
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page20.html">회원가입</a>
+                </li><li>
+                    <a href="page10.html">예매내역</a>
+                </li>
+                <li>
+                    <a href="page30.html">상영영화</a>
+                </li>
+                <li>
+                    <a href="page40.html">스낵메뉴</a>
+                </li>
+            </ul>
+            <!-- /* 메뉴 들어가는 부분 */ -->
+        </div>
+        <div id="top2">
+            고정된 화면 보이는 부분
+        </div>
+        <div id="center">
+            <h3>검색 단어 입력</h3>
+            <form action="보내는 서버주소">
+                <!-- <input type="submit" value=""> -->
+                검색어 <input type="text">
+                <button>검색어 전송</button>
+            </form>
+            <hr color="red">
+            <form action="보내는 서버주소">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>패스워드</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button>Log-in</button></td>
+                    </tr>
+                </table>
+                <hr color="red">
+            </form>
+            <form action="보내는 서버주소">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>패스워드</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" placeholder="성과 이름을 순서대로 붙여쓰세요."></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>남자<input type="radio" name="gender">여자<input type="radio" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>
+                            등산<input type="checkbox" name="hobby">
+                            독서<input type="checkbox" name="hobby">
+                            러닝<input type="checkbox" name="hobby">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>
+                            <select>
+                                <option>SKT</option>
+                                <option>LGT</option>
+                                <option>알뜰폰</option>
+                            </select>
+                            <input type="number" placeholder="-없이 숫자만 이어서">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>가입한 날짜</td>
+                        <td><input type="datetime"></td>
+                    </tr>
+                    <tr>
+                        <td>가입한 주</td>
+                        <td><input type="week"></td>
+                    </tr>
+                    <tr>
+                        <td>하고 싶은 말</td>
+                        <td>
+                            <textarea cols="30" rows="10" placeholder="100글자 이내로 작성해주세요."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button>join-in</button></td>
+                    </tr>
+                </table>
+                <hr color="red">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    padding - div안쪽
+    margin - 보더의 바깥
+-->

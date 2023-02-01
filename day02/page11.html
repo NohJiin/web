@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: yellow; /* 배경색 지정 */
+            color: blue;        /* 글자색 지정 */
+            
+            /* 
+                background-~ : 특정한 것만 골라서 하고 싶을 때
+                backround : 배경 전체를 적용
+            */
+        }
+        h1{
+            background: burlywood;
+            color: red;
+            text-decoration: none;
+            font-family: 글꼴;
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;  /*밑줄 없애는거*/
+            color: blueviolet;
+            background: burlywood;
+            font-size: 100px;
+            font-weight: bold;
+            font-family: 궁서;
+            font-style: italic;
+        }
+        #you  { /*기본선택자(id선택, 하나만 선택!) -- #id명 */
+            color: lime;
+        }
+        .we{ /* 기본선택자(class선택, 여러개 선택!) -- .class명 */
+            border-radius: 30px;
+        }
+        .we2{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="we2">페이지 11입니다.</h1>
+    <h1 class="we">페이지 22입니다.</h1>
+    <h1 class="we2" id="you">페이지 33입니다.</h1>
+    <!-- 특정한 것만 골라서 하기 (중복되는 id 사용하기 금지) -->
+    <a class="we" href="page2.html">2페이지로</a>
+</body>
+</html>

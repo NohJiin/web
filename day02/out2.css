@@ -1,0 +1,68 @@
+li{
+    list-style: none;
+    float: left;
+    /* padding : 간격 */
+    padding: 15px;
+    width: 70px;
+    height: 20px;
+    /* border-radius: 50px; */
+    text-align: center;
+}
+a:hover{    /* 마우스가 올렸을 때 효과 */
+    background: skyblue;
+}
+li:first-child{
+    border-radius: 50px 0 0 50px;
+}
+li:last-child{
+    border-radius: 0 50px 50px 0;
+}
+li:nth-child(2n){
+    background: pink;
+}
+li:nth-child(2n+1){
+    background: yellow;
+}
+a{
+    text-decoration: none;
+}
+#total{
+    width: 800px;
+    height: 800px;
+    background: lightcyan;
+}
+body{
+    background: pink;
+}
+div{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+#top{
+    width: 800px;
+    height: 100px;
+    background: skyblue;
+    padding: 2px;
+}
+#top2{
+    width: 250px;
+    height: 100px;
+    background: coral;
+    border-radius: 100px 10px;
+    padding: 2px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border: 10px dotted white;
+    box-shadow: 10px 10px black;
+}
+#center{
+    width: 800px;
+    height: 800px;
+    background: beige;
+    padding: 30px;
+}
+table{
+    font-family: 굴림;
+}
