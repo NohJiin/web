@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="out2.js"></script>
+    <script>
+        1.
+        for (let index = 0; index < 3; index++) {
+           document.write("@@@<br>")
+        }
+        2.
+        site = prompt("당신이 주로 가는 포털사이트는?")
+        if (site == 'naver') {
+          location.href = "http://www.naver.com"
+        } else if(site == 'daum'){
+           location.href = "http://www.daum.net"
+        } else {
+           location.href = "http://www.google.com"
+        }
+        // 3.
+        trip()
+        rest()
+        4.
+        result = confirm("당신은 자바 프로그래머인가요?")
+        if (result == true) {
+            document.write("훌륭한 웹프로그러머시군요")
+        } else {
+            document.write("다른 언어를 사용하시는군요!")
+        }
+        5.
+        price = prompt("커피 가격 : ")
+        num = prompt("구매 개수 : ")
+        total = parseInt(price)*parseInt(num)
+        if (total >= 15000) {
+            document.write("할인해 드릴게요")
+        } else {
+            document.write("정가로 내셔야해요")
+        }
+        6.
+        food = prompt("먹고 싶은 음식 : ")
+        price2 = prompt("가격 : ")
+        if (food == '커피' && price2 < 5000) {
+            document.write("내가 살게요")
+        } else {
+            document.write("네가 사세요")
+        }
+        7.
+        time = prompt("지금은 오전인가요? 오후인가요?")
+        if (time == '오전') {
+            for (let index = 0; index < 3; index++) {
+                document.write("굿모닝!<br>")
+            }
+        } else if (time == '오후'){
+            for (let index = 0; index < 5; index++) {
+                document.write("굿애프터눈!<br>")
+            }
+        } else{
+            for (let index = 0; index < 10; index++) {
+                document.write("굿나잇!<br>")
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <!-- 
+    1. 화면에 다음과 같이 반복해서 출력하세요
+    @@@
+    @@@
+    @@@
+
+    2. prompt("당신이 주로 가는 포털사이트는")인 경우
+    naver이면 http://www.naver.com 자동이동
+    daum이면 http://www.daum.net자동이동
+    다른 사이트이면 http://www.google.com 자동이동
+
+    3. out2.js에 여행하다()함수, 쉬다()함수를 정의하여 html에 링크
+
+    4. "당신은 자바 프로그래머인가요?" confirm()으로 확인 후,
+    true이면 "훌륭한 웹프로그러머시군요"
+    false이면 "다른 언어를 사용하시는군요!" 출력 
+
+    5. 커피값과 구매카운트를 입력받아서
+    결제금액을 계산 후(커피값*구매카운트)
+    15000원 이상이면 "할인해드릴게요", 아니면 "정가로 내셔야해요"
+
+    6. 먹고 싶은 음식과 가격을 입력받아서
+    음식이 커피이고, 가격이 5000미만이면 "내가 살게요"
+    아니면 "네가 사세요"
+
+    7. 지금은 오전인가요? 오후인가요? 물어보고
+    오전이면 "굿모닝!" 3번 출력, 오후이면 "굿애프터눈!" 5번출력
+    아니면 "굿나잇!" 10번 출력
+-->
+</body>
+</html>
