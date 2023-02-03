@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    //   function drawChart() {
+
+    //     var data = google.visualization.arrayToDataTable([
+    //       ['하루 일정', '시간'],
+    //       ['수업',      8],
+    //       ['잠',      6.5],
+    //       ['취미',      5],
+    //       ['유튜브',    4],
+    //       ['멍',      0.5]
+    //     ]);
+
+    //     var options = {
+    //       title: '나의 하루 일과'
+    //     };
+
+    //     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    //     chart.draw(data, options);
+    //   }
+
+    //   function drawChart() {
+    //     var data = google.visualization.arrayToDataTable([
+    //       ['Year', '보리', '까망'],
+    //       ['2021',  10.2,      8.7],
+    //       ['2022',  11.4,      9.2],
+    //       ['2023',  12.4,       10.2],
+    //     ]);
+
+    //     var options = {
+    //       title: '강아지 몸무게 추이',
+    //       curveType: 'function',
+    //       legend: { position: 'bottom' }
+    //     };
+
+    //     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    //     chart.draw(data, options);
+    //   }
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', '흥미', '피로도', '배고픔'],
+          ['오전', 30, 100, 70],
+          ['점심시간', 70, 30, 100],
+          ['오후', 70, 70, 20],
+        ]);
+
+        var options = {
+          chart: {
+            title: '수업 컨디션',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <div id="piechart" style="width: 900px; height: 500px;"></div> -->
+    <!-- <div id="curve_chart" style="width: 900px; height: 500px"></div> -->
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+</body>
+</html>

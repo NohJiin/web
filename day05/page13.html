@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(function () {
+        // b1을 눌렀을때 오른쪽 함수를 실행해줘
+        $('#b1').click(function() {
+          // alert('b1클릭함')
+          $.ajax({                    // 중괄호_{} 부터 json 사용한 것
+            url: "weather.html",      // 어디로 연결할 것인가
+            success : function (x) {  // 어떻게 처리할 것인가
+              $('#d1').html(x)        //
+            }
+          })
+        })  // b1
+        
+        $('#b2').click(function() {   // documet.getElementById('b3') == $('b1')
+          $.ajax({
+            url: "tour.html",         // 여행정보 데이터(연결)
+            // 성공했을 때만 실행
+            success : function (x) {  // 여행정보 데이터를 x에다 넣는다
+              $('#d2').html(x)        // d3에 를 띄운다
+            },
+            // error : ~ => 실패했을 때 실행
+          })
+        })  // b2
+        $('#b3').click(function() {
+          $.ajax({
+            url: "ok.html",
+            success : function (x) {
+              $('#d3').html(x)
+            }
+          })
+        })  // b3
+      }); // $
+    </script>
+  </head>
+  <body>
+    <!-- <button id="b1">기상청정보 받아오기</button>
+    <button id="b2">여행정보 받아오기</button>
+    <button id="b3">AiaxTest 받아오기</button> -->
+
+    <button id="b1">영화정보 받아오기(info.html)</button>
+    <button id="b2">코로나정보 받아오기(imfo2.html)</button>
+    <button id="b3">교통정보 받아오기(info3.html)</button>
+    <hr>
+    <div id="d1" style="width:400px; height: 100px; background: beige;"></div>
+    <div id="d2" style="width:400px; height: 100px; background: pink;"></div>
+    <div id="d3" style="width:400px; height: 100px; background: yellow;"></div>
+  </body>
+</html>
