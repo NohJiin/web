@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie_out.css">
+    <script src="movie_function.js"></script>
+    <style>
+        img{
+            width: 250px;
+            height: 230px;
+        }
+        li{
+            list-style: none;
+            float: left;
+            /* padding : 간격 */
+            padding: 15px;
+            width: 120px;
+            height: 20px;
+            /* border-radius: 50px; */
+            text-align: center;
+            color: black;
+            background: #f5c54c;
+        }
+        table{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <h1>Movie</h1>
+            <ul>
+                <li>
+                    <a href="movie_list.html">영화</a>
+                </li>
+                <li>
+                    <a href="movie_ticket.html">예매</a>
+                </li>
+                <li>
+                    <a href="movie_check.html">예매내역</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            회원정보
+        </div>
+        <div id="center">
+            <h3>영화 예매하기</h3>
+            <form action="보내는 서버주소">
+                <!-- <input type="submit" value=""> -->
+                제목 : 500일의 썸머
+            </form>
+            <hr color="gray">
+            <form action="보내는 서버주소">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <img src="summer.jpg" width="250" height="230" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>날짜</td>
+                        <td align="left"><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>시간</td>
+                        <td align="left"><input type="time"></td>
+                    </tr>
+                    <tr>
+                        <td>인원</td>
+                        <td align="left"><input type="text"></td>        <!-- 숫자 선택하는거 -->
+                    </tr>
+                    <tr>
+                        <td>좌석</td>
+                        <td align="left">
+                            1열<input type="radio" name="positon">
+                            2열<input type="radio" name="positon">
+                            3열<input type="radio" name="positon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td align="left">
+                            4열<input type="radio" name="positon">
+                            5열<input type="radio" name="positon">
+                            6열<input type="radio" name="positon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2">
+                            <button class="btn" onclick="ticketing()">예매하기</button>
+                        </td>
+                    </tr>
+                </table>
+                <hr color="gray">
+            </form>
+</body>
+</html>

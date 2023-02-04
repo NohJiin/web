@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie_out.css">
+    <style>
+        img{
+            width: 250px;
+            height: 230px;
+        }
+        li{
+            list-style: none;
+            float: left;
+            /* padding : 간격 */
+            padding: 15px;
+            width: 120px;
+            height: 20px;
+            /* border-radius: 50px; */
+            text-align: center;
+            color: black;
+            background: #f5c54c;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <h1>Movie</h1>
+            <ul>
+                <li>
+                    <a href="movie_list.html">영화</a>
+                </li>
+                <li>
+                    <a href="movie_ticket.html">예매</a>
+                </li>
+                <li>
+                    <a href="movie_check.html">예매내역</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            <table>
+                <tr>
+                    <td  colspan="2">
+                        회원정보
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        노00님
+                    </td>
+                    <td>
+                        등급 : vip
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div id="center">
+            <table id="list">        <!-- talble 간격(높이)을 늘리고 싶어요 -->
+                <tr>
+                    <td>
+                        <img src="busan.png" alt="부산행">
+                    </td>
+                    <td>
+                        <img src="summer.jpg" alt="양들의 침묵">
+                    </td>
+                    <td>
+                        <img src="call me.jpg" alt="콜 미">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        부산행
+                    </td>
+                    <td>
+                        500일의 썸머
+                    </td>
+                    <td>
+                        콜 미 바이 유 어 네임
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        예매율 : 13 %
+                    </td>
+                    <td>
+                        예매율 : 20 %
+                    </td>
+                    <td>
+                        예매율 : 17 %
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" id="btn1"><a href="movie_ticket.html">예매하기</a></button>
+                    </td>
+                    <td>
+                        <button class="btn" id="btn2"><a href="movie_ticket.html">예매하기</a></button>
+                    </td>
+                    <td>
+                        <button class="btn" id="btn3"><a href="movie_ticket.html">예매하기</a></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
