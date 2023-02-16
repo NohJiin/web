@@ -1,0 +1,20 @@
+- 생성자 + static + 상속
+1) 생성자 확인문제 : Mask문제
+https://docs.google.com/presentation/d/1cPxokB_cTXFJsihghAvptjkjuvcr4SJjNM_u2AP0_64/edit#slide=id.gf8e38b3f76_0_41
+
+2) static확인문제
+	딸.java ==> 멤버변수(이름, 나이), static변수(아빠지갑), 	멤버메서드(tv보다())
+
+	- 딸이 태어날때마다 아빠 지갑에서 1000원씩 꺼내서 줌
+	- 딸이 태어날때마다 카운트
+
+	우리집.java ==>
+		딸 d1 = new 딸("홍길순", "여");
+		딸 d2 = new 딸("홍길순", "여");
+		a.딸들의 정보 출력
+		b.딸이 몇명인지 카운트한 것 프린트
+		c. 현재 남은 아빠 지갑에 들어있는 돈 프린트
+3) 상속확인 문제
+Car만들고, 상속받아서 Truck을 만들고,
+Truck을 상속받아서 CoffeeTruck을 만든다.
+내차들.java에서 CoffeeTruck객체를 만들어 사용해보세요.
